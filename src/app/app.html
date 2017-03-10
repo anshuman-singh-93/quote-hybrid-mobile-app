@@ -1,0 +1,21 @@
+<ion-menu [content]="nav">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="onClickMenu(settingsPage)">
+        <ion-icon name="settings" item-left></ion-icon>
+        Settings
+      </button>
+      <button ion-item (click)="onClickMenu(tabsPage)">
+        <ion-icon name="settings" item-left></ion-icon>
+        Tabs
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="tabsPage" #nav></ion-nav>
